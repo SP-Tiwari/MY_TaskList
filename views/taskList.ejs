@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="utf-8">
+<head>
+	<title>tasklist</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container" id="head">
+		<h1 style="color:#413c69">  <%= dayName %></h1>
+	</div>
+	<div class="container" >
+		
+     	
+     	
+     	<%for(var i=0;i<NewTaskIs.length; i++)
+     	{%>
+     		<div class="task">
+     			<input type="checkbox" >
+     			<p><%= NewTaskIs[i]%></p>
+     		</div>
+     		
+     	<%}%>
+     	 <form class="item" action="/" method="Post">
+     	<input type="text" name="NewTask" placeholder="Add New Item" autocomplete="off" >
+     	<button class="btn"type="submit" name="button">+</button>
+     </form>
+ 
+	</div>
+	
+    
+    
+</body>
+<footer class="ftr">
+	<P>&copy ToDoList  2021-22</P>
+	
+</footer>
+</html>
